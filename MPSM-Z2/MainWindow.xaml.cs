@@ -25,7 +25,7 @@ namespace MPSM_Z2
         int id;
         private void Category(object sender, RoutedEventArgs e)
         {
-            Entities entities = new Entities();
+            Entitie entities = new Entitie();
             List<Clients> agents = entities.Clients.ToList();
             List<Admins> agents2 = entities.Admins.ToList();
             foreach (var item in agents)
@@ -36,7 +36,6 @@ namespace MPSM_Z2
                     id = item.ID;
                     CabinetWindow window2 = new CabinetWindow(item.ID);
                     CabinetRedactWindow window3 = new CabinetRedactWindow(item.ID);
-                    OrderingWindow window4 = new OrderingWindow(item.ID);
                     window.Show();
                     this.Close();
                     Login.Text = item.Login;

@@ -18,7 +18,6 @@ namespace MPSM_Z2
         public Items()
         {
             this.Bag = new HashSet<Bag>();
-            this.Orders = new HashSet<Orders>();
         }
     
         public int ID { get; set; }
@@ -28,7 +27,5 @@ namespace MPSM_Z2
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bag> Bag { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

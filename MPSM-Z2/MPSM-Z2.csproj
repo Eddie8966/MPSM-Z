@@ -65,10 +65,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Admins.cs">
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Bag.cs">
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="CabinetRedactWindow.xaml.cs">
       <DependentUpon>CabinetRedactWindow.xaml</DependentUpon>
@@ -83,34 +83,34 @@
       <DependentUpon>CategoryWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clients.cs">
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="CurrentOrdersAdminWindow.xaml.cs">
       <DependentUpon>CurrentOrdersAdminWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Items.cs">
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="MPSM_Z.Context.cs">
+    <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MPSM_Z.Context.tt</DependentUpon>
+      <DependentUpon>Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="MPSM_Z.cs">
+    <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="MPSM_Z.Designer.cs">
+    <Compile Include="Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MPSM_Z.edmx</DependentUpon>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="OrderingWindow.xaml.cs">
       <DependentUpon>OrderingWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Orders.cs">
-      <DependentUpon>MPSM_Z.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
@@ -174,12 +174,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="MPSM_Z.edmx">
+    <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MPSM_Z.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="MPSM_Z.edmx.diagram">
-      <DependentUpon>MPSM_Z.edmx</DependentUpon>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -204,19 +204,19 @@
     <Resource Include="Image\ic_order.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MPSM_Z.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MPSM_Z.Context.cs</LastGenOutput>
-      <DependentUpon>MPSM_Z.edmx</DependentUpon>
-    </Content>
-    <Content Include="MPSM_Z.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MPSM_Z.edmx</DependentUpon>
-      <LastGenOutput>MPSM_Z.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

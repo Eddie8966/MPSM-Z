@@ -20,7 +20,7 @@
                         </TransformGroup>
                     </Rectangle.RenderTransform>
                 </Rectangle>
-                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,404,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category" d:LayoutOverrides="VerticalAlignment">
+                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,404,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Brus" d:LayoutOverrides="VerticalAlignment">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
@@ -56,14 +56,14 @@
                 <TextBlock HorizontalAlignment="Left" Margin="446,466,0,0" TextWrapping="Wrap" Text="ТОПЛИВНЫЕ ГРАНУЛЫ" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
                 <TextBlock HorizontalAlignment="Left" Margin="446,540,0,0" TextWrapping="Wrap" Text="Древесные топливные гранулы («пеллеты») вырабатываются из экологически чистой древесины сосны и предназначены для использования в качестве топлива для различных видов котлов в промышленных и бытовых условиях.
 Пеллеты изготавливаются из отходов собственного производства, образующихся при обработке сухого пиломатериала." VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White" Width="685"/>
-                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,678,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category">
+                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,678,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Gran">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,964,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category">
+                <Button Width="281" Height="39" Content="Добавить" FontSize="20" HorizontalAlignment="Left" Margin="1061,964,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Shield">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>

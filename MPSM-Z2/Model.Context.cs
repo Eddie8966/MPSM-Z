@@ -13,10 +13,10 @@ namespace MPSM_Z2
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class Entitie : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public Entitie()
+            : base("name=Entitie")
         {
         }
     

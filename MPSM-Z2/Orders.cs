@@ -15,15 +15,10 @@ namespace MPSM_Z2
     public partial class Orders
     {
         public int ID { get; set; }
-        public Nullable<int> Number { get; set; }
-        public Nullable<int> ID_Item { get; set; }
         public Nullable<double> Summa { get; set; }
         public Nullable<int> Count { get; set; }
         public Nullable<int> ID_Client { get; set; }
-        public Nullable<int> ID_Admin { get; set; }
     
-        public virtual Admins Admins { get; set; }
         public virtual Clients Clients { get; set; }
-        public virtual Items Items { get; set; }
     }
 }

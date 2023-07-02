@@ -36,7 +36,7 @@ namespace MPSM_Z2
         }
         private void Category(object sender, RoutedEventArgs e)
         {
-            Entities entity = new Entities();
+            Entitie entity = new Entitie();
             Clients reg = new Clients();
             List<Clients> registr = entity.Clients.ToList();
             Regex fio = new Regex("^[А-Я]{1}[а-я].+ [А-Я]{1}[а-я].+ [А-Я]{1}[а-я].+");

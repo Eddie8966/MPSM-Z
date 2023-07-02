@@ -14,18 +14,9 @@ namespace MPSM_Z2
     
     public partial class Admins
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Admins()
-        {
-            this.Orders = new HashSet<Orders>();
-        }
-    
         public int ID { get; set; }
         public string FIO { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

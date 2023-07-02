@@ -20,7 +20,7 @@
                         </TransformGroup>
                     </Rectangle.RenderTransform>
                 </Rectangle>
-                <TextBlock HorizontalAlignment="Left" Margin="558,74,0,0" TextWrapping="Wrap" Text="Оформление заказа" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0,82,0,0" TextWrapping="Wrap" Text="Оформление заказа" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke" d:LayoutOverrides="LeftPosition, RightPosition"/>
                 <Button Width="281" Height="39" Content="Оформить" FontSize="20" HorizontalAlignment="Left" Margin="1061,964,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -28,12 +28,85 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Click="Cabinet" Margin="1230,65,139,931" Background="{x:Null}" BorderBrush="{x:Null}">
-                    <Image Source="/image/ic_user.png" Margin="0,0,0,0" Width="80"/>
-                </Button>
-                <Button Click="Category" Margin="1113,58,223,924" Background="{x:Null}" BorderBrush="{x:Null}">
-                    <Image Source="/Image/ic_close.png" Width="80" Height="80"/>
-                </Button>
+                <TextBlock HorizontalAlignment="Left" Margin="182,232,0,0" TextWrapping="Wrap" Text="Название продукта" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="182,432,0,0" TextWrapping="Wrap" Text="Название продукта" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="182,632,0,0" TextWrapping="Wrap" Text="Название продукта" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="640,232,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="640,432,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="640,632,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Left" Margin="1140,232,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="1140,432,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="1140,632,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="28" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
+                <TextBox x:Name="Login" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="140,279,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Item1" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="140,279,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Item2" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="140,482,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Item3" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="140,682,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Count1" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="551,279,551,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Count2" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="551,482,551,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Count3" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="551,682,551,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Price1" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="996,279,106,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment" Width="338">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Price2" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="996,482,106,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment" Width="338">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Price3" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" Margin="996,682,106,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top" Width="338">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
             </Grid>
         </Border>
     </Viewbox>

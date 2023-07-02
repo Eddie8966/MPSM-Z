@@ -28,7 +28,7 @@ namespace MPSM_Z2
         }
         private void Cabinet(object sender, RoutedEventArgs e)
         {
-            Entities entity = new Entities();
+            Entitie entity = new Entitie();
             List<Clients> user = entity.Clients.ToList();
             Clients client = entity.Clients.Where(a => a.ID == id).First();
             Regex fio = new Regex("^[А-Я]{1}[а-я].+ [А-Я]{1}[а-я].+ [А-Я]{1}[а-я].+");

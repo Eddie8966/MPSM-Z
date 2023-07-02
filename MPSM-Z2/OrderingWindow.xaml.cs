@@ -19,37 +19,43 @@ namespace MPSM_Z2
     /// </summary>
     public partial class OrderingWindow : Window
     {
+        float sum = 0;
+        int k = 0;
         int id;
-        public OrderingWindow(int id)
+        int k1 = 0;
+        int k2 = 0;
+        int k3 = 0;
+        float sum1 = 0;
+        float sum2 = 0;
+        float sum3 = 0;
+        public OrderingWindow(int id, int k1, int k2, int k3, float sum1, float sum2, float sum3)
         {
             InitializeComponent();
             this.id = id;
+            this.k1 = k1;
+            this.k2 = k2;
+            this.k3 = k3;
+            this.sum1 = sum1;
+            this.sum2 = sum2;
+            this.sum3 = sum3;
         }
         private void Category(object sender, RoutedEventArgs e)
         {
+            Entitie entity = new Entitie();
             CategoryWindow window = new CategoryWindow(id);
+            List<Orders> ord = entity.Orders.ToList();
+            Orders order = new Orders();
+            sum = sum1+sum2+sum3;
+            k = k1+k2+k3;
+            order.Summa = sum;
+            order.Count = k;
+            order.ID_Client = id;
+            entity.Orders.Add(order);
+            entity.SaveChanges();
+            entity.Dispose();
             window.Show();
             this.Close();
         }
-        private void Cabinet(object sender, RoutedEventArgs e)
-        {
-            Entities entity = new Entities();
-            List<Clients> registr = entity.Clients.ToList();
-            CabinetWindow window = new CabinetWindow(id);
-            foreach (var item in registr)
-            {
-                    if (id == item.ID)
-                    {
-                        window.FIO.Text = item.FIO;
-                        window.Phone.Text = item.Phone;
-                        window.Organization.Text = item.Organization;
-                        window.Login.Text = item.Login;
-                        window.Password.Text = item.Password;
-                    window.Adress.Text = item.Adress;
-                    }
-            }
-            window.Show();
-            this.Close();
-        }
+       
     }
 }
