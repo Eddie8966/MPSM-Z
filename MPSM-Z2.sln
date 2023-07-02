@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSM-Z2", "MPSM-Z2\MPSM-Z2.csproj", "{E7DB0E05-4502-4A81-A5AC-74360BFD0D2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{6820CC7E-A6AA-453E-AECE-DC331C2BA94D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E7DB0E05-4502-4A81-A5AC-74360BFD0D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DB0E05-4502-4A81-A5AC-74360BFD0D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7DB0E05-4502-4A81-A5AC-74360BFD0D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6820CC7E-A6AA-453E-AECE-DC331C2BA94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6820CC7E-A6AA-453E-AECE-DC331C2BA94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6820CC7E-A6AA-453E-AECE-DC331C2BA94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6820CC7E-A6AA-453E-AECE-DC331C2BA94D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

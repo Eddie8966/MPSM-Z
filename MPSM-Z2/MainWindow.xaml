@@ -43,27 +43,27 @@
                     </Button.Resources>
                 </Button>
                 <TextBlock Margin="564,403,565,0" TextWrapping="Wrap" Text="Авторизация" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
-                <TextBox x:Name="FIO_Copy3" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,547,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top">
+                <TextBox Name="Login" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,547,0,0" TextWrapping="Wrap" Width="338" BorderThickness="2,2,2,2" BorderBrush="Black" Height="58" VerticalAlignment="Top">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <PasswordBox x:Name="FIO_Copy4" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,656,0,0"  VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black" RenderTransformOrigin="1,0.5" ClipToBounds="True" SnapsToDevicePixels="True">
+                <PasswordBox Name="Password" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,656,0,0"  VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black" RenderTransformOrigin="1,0.5" ClipToBounds="True" SnapsToDevicePixels="True">
                     <PasswordBox.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="22"/>
+                        <Style x:Key="{x:Type PasswordBox}" TargetType="{x:Type PasswordBox}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                                        <Border CornerRadius="22" BorderThickness="2" BorderBrush="Black" Background="White">
+                                            <ScrollViewer x:Name="PART_ContentHost"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
                         </Style>
                     </PasswordBox.Resources>
-                    <PasswordBox.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="1"/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="0"/>
-                        </TransformGroup>
-                    </PasswordBox.RenderTransform>
                 </PasswordBox>
                 <TextBlock HorizontalAlignment="Left" Margin="556,630,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
                 <TextBlock HorizontalAlignment="Left" Margin="556,520,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White"/>

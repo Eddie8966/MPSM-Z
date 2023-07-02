@@ -19,21 +19,23 @@ namespace MPSM_Z2
     /// </summary>
     public partial class CabinetWindow : Window
     {
+        int id;
+        public CabinetWindow(int id)
+        {
+            InitializeComponent();
+            this.id = id;
+        }
         private void Category(object sender, RoutedEventArgs e)
         {
-            CategoryWindow window = new CategoryWindow();
+            CategoryWindow window = new CategoryWindow(id);
             window.Show();
             this.Close();
         }
         private void CabinetRedact(object sender, RoutedEventArgs e)
         {
-            CabinetRedactWindow window = new CabinetRedactWindow();
+            CabinetRedactWindow window = new CabinetRedactWindow(id);
             window.Show();
             this.Close();
-        }
-        public CabinetWindow()
-        {
-            InitializeComponent();
         }
     }
 }

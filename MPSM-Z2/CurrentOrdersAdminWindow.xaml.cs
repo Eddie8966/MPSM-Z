@@ -19,21 +19,23 @@ namespace MPSM_Z2
     /// </summary>
     public partial class CurrentOrdersAdminWindow : Window
     {
+        int id;
+        public CurrentOrdersAdminWindow(int id)
+        {
+            InitializeComponent();
+            this.id = id;
+        }
         private void CategoryAdmin(object sender, RoutedEventArgs e)
         {
-            CategoryAdminWindow window = new CategoryAdminWindow();
+            CategoryAdminWindow window = new CategoryAdminWindow(id);
             window.Show();
             this.Close();
         }
         private void Cabinet(object sender, RoutedEventArgs e)
         {
-            CabinetWindow window = new CabinetWindow();
+            CabinetWindow window = new CabinetWindow(id);
             window.Show();
             this.Close();
-        }
-        public CurrentOrdersAdminWindow()
-        {
-            InitializeComponent();
         }
     }
 }

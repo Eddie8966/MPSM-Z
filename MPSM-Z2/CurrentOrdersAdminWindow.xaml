@@ -21,13 +21,6 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
                 <TextBlock HorizontalAlignment="Left" Margin="558,74,0,0" TextWrapping="Wrap" Text="Активные заказы" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
-                <Button Width="281" Height="39" Content="Оформить" FontSize="20" HorizontalAlignment="Left" Margin="1061,964,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="22"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
                 <Button Click="Cabinet" Margin="1230,65,139,931" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="/image/ic_user.png" Margin="0,0,0,0" Width="80"/>
                 </Button>

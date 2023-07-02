@@ -31,35 +31,35 @@
                 <Button Click="Category" Margin="1235,103,116,911" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="/Image/ic_close.png" Width="52" Height="70"/>
                 </Button>
-                <TextBox x:Name="FIO_Copy" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="Login" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox x:Name="FIO_Copy6" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="Password" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox x:Name="FIO_Copy7" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="FIO" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox x:Name="FIO_Copy8" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="Phone" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox x:Name="FIO_Copy9" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,680,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="Adress" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,680,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>
@@ -68,11 +68,11 @@
                 </TextBox>
                 <TextBlock HorizontalAlignment="Left" Margin="550,330,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
                 <TextBlock HorizontalAlignment="Left" Margin="550,230,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
-                <TextBlock HorizontalAlignment="Left" Margin="550,730,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="550,730,0,0" TextWrapping="Wrap" Text="Организация" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
                 <TextBlock HorizontalAlignment="Left" Margin="550,430,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
                 <TextBlock HorizontalAlignment="Left" Margin="550,530,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
                 <TextBlock HorizontalAlignment="Left" Margin="550,630,0,0" TextWrapping="Wrap" Text="Адрес" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="36" RenderTransformOrigin="0.514,0.22" Foreground="White" d:LayoutOverrides="VerticalAlignment"/>
-                <TextBox x:Name="FIO_Copy1" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,780,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
+                <TextBox Name="Organization" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,780,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="22"/>

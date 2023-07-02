@@ -19,25 +19,39 @@ namespace MPSM_Z2
     /// </summary>
     public partial class CategoryWindow : Window
     {
-        public CategoryWindow()
+        int id;
+        public CategoryWindow(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
         private void Category(object sender, RoutedEventArgs e)
         {
-            CategoryWindow window = new CategoryWindow();
-            window.Show();
-            this.Close();
+
         }
         private void Cabinet(object sender, RoutedEventArgs e)
         {
-            CabinetWindow window = new CabinetWindow();
+            Entities entity = new Entities();
+            List<Clients> registr = entity.Clients.ToList();
+            CabinetWindow window = new CabinetWindow(id);
+            foreach (var item in registr)
+            {
+                if (id == item.ID)
+                {
+                    window.FIO.Text = item.FIO;
+                    window.Phone.Text = item.Phone;
+                    window.Organization.Text = item.Organization;
+                    window.Login.Text = item.Login;
+                    window.Password.Text = item.Password;
+                    window.Adress.Text = item.Adress;
+                }
+            }
             window.Show();
             this.Close();
         }
         private void Order(object sender, RoutedEventArgs e)
         {
-            OrderingWindow window = new OrderingWindow();
+            OrderingWindow window = new OrderingWindow(id);
             window.Show();
             this.Close();
         }
