@@ -53,7 +53,7 @@
                 <TextBlock HorizontalAlignment="Left" Margin="446,752,0,0" TextWrapping="Wrap" Text="ЗАГОТОВКА МЕБЕЛЬНОГО ЩИТА" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
                 <TextBlock HorizontalAlignment="Left" Margin="446,809,0,0" TextWrapping="Wrap" Text="Заготовка щитовая из древесины хвойных и лиственных пород проходит высококачественную сушку, обработку и сортировку при помощи итальянского и немецкого оборудования." VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White" Width="685"/>
                 <TextBlock HorizontalAlignment="Left" Margin="1130,922,0,0" TextWrapping="Wrap" Text="Цена: 3000р/шт" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="20" RenderTransformOrigin="0.514,0.22" Foreground="White"/>
-                <Button Click="CurrentOrders" Margin="1113,58,223,924" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Button Click="CurrentOrders" Margin="1186,58,150,924" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="/Image/ic_order.png" Width="80" Height="80"/>
                 </Button>
             </Grid>
