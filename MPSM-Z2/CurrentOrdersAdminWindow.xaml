@@ -1,0 +1,40 @@
+﻿<Window x:Class="MPSM_Z2.CurrentOrdersAdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MPSM_Z2"
+        mc:Ignorable="d"
+         WindowState="Maximized"
+            Title="CategoryWindow" Height="1080" Width="1440">
+    <Viewbox>
+        <Border Width="1440" Height="1080">
+            <Grid Background="#FF3D4763">
+                <Rectangle HorizontalAlignment="Left"  Height="984" Width="1329" VerticalAlignment="Center" OpacityMask="#FF161F38" Fill="#FF161F38" Margin="61,0,0,0" RenderTransformOrigin="0.5,0.5" RadiusX="113.325" RadiusY="113.325" Stroke="Black">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="0"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="0"/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <TextBlock HorizontalAlignment="Left" Margin="558,74,0,0" TextWrapping="Wrap" Text="Активные заказы" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
+                <Button Width="281" Height="39" Content="Оформить" FontSize="20" HorizontalAlignment="Left" Margin="1061,964,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" Click="Category">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Click="Cabinet" Margin="1230,65,139,931" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="/image/ic_user.png" Margin="0,0,0,0" Width="80"/>
+                </Button>
+                <Button Click="CategoryAdmin" Margin="1113,58,223,924" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="/Image/ic_close.png" Width="80" Height="80"/>
+                </Button>
+            </Grid>
+        </Border>
+    </Viewbox>
+</Window>
