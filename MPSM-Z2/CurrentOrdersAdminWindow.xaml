@@ -20,13 +20,48 @@
                         </TransformGroup>
                     </Rectangle.RenderTransform>
                 </Rectangle>
-                <TextBlock HorizontalAlignment="Left" Margin="558,74,0,0" TextWrapping="Wrap" Text="Активные заказы" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
-                <Button Click="Cabinet" Margin="1230,65,139,931" Background="{x:Null}" BorderBrush="{x:Null}">
-                    <Image Source="/image/ic_user.png" Margin="0,0,0,0" Width="80"/>
-                </Button>
-                <Button Click="CategoryAdmin" Margin="1113,58,223,924" Background="{x:Null}" BorderBrush="{x:Null}">
+                <TextBlock HorizontalAlignment="Left" Margin="489,215,0,0" TextWrapping="Wrap" Text="Введите ФИО клиента" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
+                <Button Click="CategoryAdmin" Margin="1205,58,131,924" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="/Image/ic_close.png" Width="80" Height="80"/>
                 </Button>
+                <TextBox Name="FIO" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="489,310,0,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="69" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment" Width="504">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <Button Height="50" Content="Найти" FontSize="24" HorizontalAlignment="Left" Margin="554,417,0,0" VerticalAlignment="Top" Background="#FF1E8C79" Foreground="White" d:LayoutOverrides="VerticalAlignment" Width="350" Click="Search">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBox Name="Item" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="537,606,0,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="69" VerticalAlignment="Top" Width="400">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBlock HorizontalAlignment="Left" Margin="572,534,0,0" TextWrapping="Wrap" Text="Номер заказа" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
+                <TextBlock HorizontalAlignment="Left" Margin="598,673,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0,807,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="50" RenderTransformOrigin="0.514,0.22" RenderOptions.BitmapScalingMode="Fant" Foreground="WhiteSmoke" d:LayoutOverrides="LeftPosition, RightPosition"/>
+                <TextBox Name="Count" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="526,745,0,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="69" VerticalAlignment="Top" Width="400">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Name="Price" TextAlignment="Center" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="526,879,0,0" TextWrapping="Wrap" BorderThickness="2,2,2,2" BorderBrush="Black" Height="69" VerticalAlignment="Top" Width="400">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="22"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
             </Grid>
         </Border>
     </Viewbox>

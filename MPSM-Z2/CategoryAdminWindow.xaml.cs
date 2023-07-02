@@ -35,7 +35,7 @@ namespace MPSM_Z2
         {
             CurrentOrdersAdminWindow window = new CurrentOrdersAdminWindow(id);
             window.Show();
-
+            this.Close();
         }
     }
 }

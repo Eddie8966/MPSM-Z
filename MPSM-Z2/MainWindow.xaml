@@ -50,7 +50,7 @@
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <PasswordBox Name="Password" FontSize="20" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,656,0,0"  VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black" RenderTransformOrigin="1,0.5" ClipToBounds="True" SnapsToDevicePixels="True">
+                <PasswordBox Name="Password" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,656,0,0"  VerticalAlignment="Top" Width="338" Height="58" BorderThickness="2,2,2,2" BorderBrush="Black" RenderTransformOrigin="1,0.5" ClipToBounds="True" SnapsToDevicePixels="True">
                     <PasswordBox.Resources>
                         <Style x:Key="{x:Type PasswordBox}" TargetType="{x:Type PasswordBox}">
                             <Setter Property="Template">
