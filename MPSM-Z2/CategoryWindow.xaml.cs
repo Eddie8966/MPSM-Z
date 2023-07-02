@@ -19,15 +19,44 @@ namespace MPSM_Z2
     /// </summary>
     public partial class CategoryWindow : Window
     {
+        int k1 = 0;
+        int k2 = 0;
+        int k3 = 0;
         int id;
         public CategoryWindow(int id)
         {
             InitializeComponent();
             this.id = id;
         }
-        private void Category(object sender, RoutedEventArgs e)
+        private void Brus(object sender, RoutedEventArgs e)
         {
-
+            Entities entity = new Entities();
+            Bag bag = new Bag();
+            bag.ID_Item = 1;
+            k1++;
+            entity.Bag.Add(bag);
+            entity.SaveChanges();
+            entity.Dispose();
+        }
+        private void Gran(object sender, RoutedEventArgs e)
+        {
+            Entities entity = new Entities();
+            Bag bag = new Bag();
+            bag.ID_Item = 2;
+            k2++;
+            entity.Bag.Add(bag);
+            entity.SaveChanges();
+            entity.Dispose();
+        }
+        private void Shield(object sender, RoutedEventArgs e)
+        {
+            Entities entity = new Entities();
+            Bag bag = new Bag();
+            bag.ID_Item = 3;
+            k3++;
+            entity.Bag.Add(bag);
+            entity.SaveChanges();
+            entity.Dispose();
         }
         private void Cabinet(object sender, RoutedEventArgs e)
         {
